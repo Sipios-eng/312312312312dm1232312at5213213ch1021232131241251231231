@@ -1,0 +1,32 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Menu
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <div class="Perfil">
+    <ion-avatar>
+      <img src="https://picsum.photos/id/237/200/200" /> <!-- Imagen por defecto -->
+    </ion-avatar>
+    <h2>{{username}}</h2>
+      <ion-button expand="full" (click)="IrALogin()">Iniciar Sesión / Registrarse</ion-button>
+  </div>
+
+  <ion-list>
+    <ion-item>
+      <ion-label>Opción 1</ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-label>Opción 2
+      </ion-label>
+    </ion-item>
+    <ion-item (click)="CambiarContra()">
+      <ion-label>Cambiar Contraseña</ion-label>
+    </ion-item>
+
+  </ion-list>
+
+</ion-content>
